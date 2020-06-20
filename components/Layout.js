@@ -1,11 +1,17 @@
+/** @jsx jsx */
+
 import styles from '../styles/layout.module.scss'
-import { jsx, Button } from 'theme-ui'
+import { jsx, Button, useColorMode } from 'theme-ui'
 import Link from 'next/link'
 
 export default ({ children }) => {
+  const [colorMode, setColorMode] = useColorMode();
+
   return (
-    <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div sx={{
+      bg: 'primary'
+    }}>
+      <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
           <Link href="/">
             <a className="navbar-brand">
@@ -54,11 +60,17 @@ export default ({ children }) => {
                   <a className="nav-link">Resume</a>
                 </Link>
               </li>
+              <li className="nav-item">
+                <Button onClick={(e) => {
+                  console.log(colorMode)
+                  setColorMode(colorMode === 'default' ? 'light' : 'default')
+                }}>Toggle Color</Button>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
       {children}
-    </>
+    </div>
   )
 }

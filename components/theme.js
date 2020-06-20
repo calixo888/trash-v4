@@ -3,12 +3,12 @@ export default {
   colors: {
     text: '#000',
     background: '#fff',
-    primary: '#56FFD6',
-    secondary: '#072740',
+    primary: '#072740',
+    secondary: '#56FFD6',
     modes: {
-      'dark': {
-        primary: '#56FFD6#072740',
-        secondary: '#56FFD6',
+      'light': {
+        primary: '#56FFD6',
+        secondary: '#072740',
       }
     }
   },
