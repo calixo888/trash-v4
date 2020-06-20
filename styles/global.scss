@@ -1,3 +1,9 @@
 body {
   min-height: 100vh;
 }
+
+.date-icon, .location-icon {
+  width: 20px;
+  transform: translateY(-2px);
+  margin-right: 5px;
+}

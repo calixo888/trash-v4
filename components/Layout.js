@@ -72,7 +72,10 @@ export default ({ children }) => {
           </div>
         </div>
       </nav>
-      {children}
+
+      <div sx={{
+        py: 5
+      }}>{children}</div>
     </div>
   )
 }

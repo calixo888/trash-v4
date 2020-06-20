@@ -21,7 +21,7 @@ export default {
   },
   styles: {
     h1: {
-      fontSize: 32,
+      fontSize: 50,
       fontFamily: 'body',
       fontWeight: 'body',
       color: 'primary',
