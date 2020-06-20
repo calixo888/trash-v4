@@ -10,6 +10,8 @@ export default ({ children }) => {
   return (
     <div sx={{
       bg: 'primary'
+    }} style={{
+      'min-height': '100vh'
     }}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
